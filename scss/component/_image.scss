@@ -1,0 +1,15 @@
+.img-box {
+	overflow: hidden;
+	position: relative;
+	border-radius: 2rem;
+	z-index: 0;
+}
+#image {
+	animation: image 1s;
+	transform: scale(1);
+	transition: 0.5s;
+	transition-timing-function: ease-out;
+	&:hover {
+		transform: scale(1.2);
+	}
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/65dcd4bcca.js" crossorigin="anonymous"></script>
+    <title>Mini-projet</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container-fluid bar">
+            <p class="bar--progress"></p>
+        </div>
+        <div class="col-md-8 m-auto">
+            <div class="mt-4 img-box">
+                <a href="https://www.lodeurducafe.com/wp-content/uploads/2019/12/repas-noel-vegan.jpg">
+                    <img id="image" class="img-fluid img-thumbnails"
+                        src="https://www.lodeurducafe.com/wp-content/uploads/2019/12/repas-noel-vegan.jpg" alt="repas">
+                </a>
+            </div>
+            <div class="mt-4 mb-4">
+                <h1>French cookies</h1>
+                <p>Proin rhoncus risus at elit scelerisque euismod. Vestibulum tempus condimentum magna, vitae mollis
+                    enim elementum a.</p>
+            </div>
+            <div>
+                <h2 class="border-bottom">Overview</h2>
+            </div>
+            <div class="mt-4 mb-4 d-flex justify-content-between flex-wrap">
+                <div class="info">
+                    <p class="icon">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </p>
+                    <p>Difficulty</p>
+                </div>
+                <div class="info">
+                    <p class="border icon">€€</p>
+                    <p>Costs</p>
+                </div>
+                <div class="info">
+                    <p class="border icon">45 min</p>
+                    <p>Preparation time</p>
+                </div>
+                <div class="info">
+                    <p class="border icon">0 mn</p>
+                    <p>Cooking time</p>
+                </div>
+                <div class="info">
+                    <p class="border icon">10 mn</p>
+                    <p>Resting time</p>
+                </div>
+            </div>
+            <div>
+                <h2 class="border-bottom">Ingredients</h2>
+            </div>
+            <div class="mt-4 mb-2 d-flex">
+                <p class="pt-1">Servings:</p>
+                <div class="d-flex align-items-center pb-2">
+                    <button id="minus" class="btn pt-0">-</button>
+                    <input id="servings" class="w-25" type="number" value="4">
+                    <button id="plus" class="btn pt-0">+</button>
+                </div>
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Qty</th>
+                        <th scope="col">Metric</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Tomato</td>
+                        <td>2</td>
+                        <td>Piece</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Chocolate</td>
+                        <td>300</td>
+                        <td>Gram</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Milk</td>
+                        <td>25</td>
+                        <td>Cl</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>List of the recipe ingredients</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('minus').addEventListener('click', function () {
+            document.getElementById('servings').value -= 1
+        })
+        document.getElementById('plus').addEventListener('click', function () {
+            document.getElementById('servings').value = parseInt(document.getElementById('servings').value) + 1
+        })
+    </script>
+</body>
+
+</html>

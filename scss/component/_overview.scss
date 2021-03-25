@@ -1,0 +1,21 @@
+.info {
+	width: 80px;
+	font-size: 0.6rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	transform: scale(1);
+	transition: transform 0.3s ease-in-out;
+	&:hover {
+		transform: scale(1.1);
+	}
+	.icon {
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		text-align: center;
+		padding-top: 1.6rem;
+	}
+}

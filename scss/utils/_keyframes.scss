@@ -1,0 +1,41 @@
+@keyframes headshake {
+	25% {
+		transform: translateX(4%);
+	}
+	50% {
+		transform: translateX(-4%);
+	}
+}
+@keyframes progress-bar {
+	0% {
+		opacity: 1;
+		transform: scaleX(0);
+	}
+	50% {
+		opacity: 1;
+		transform: scaleX(0.3);
+	}
+	75% {
+		opacity: 1;
+		transform: scaleX(0.6);
+	}
+	99% {
+		opacity: 1;
+		transform: scaleX(0.99);
+	}
+	100% {
+		opacity: 0;
+		transform: scaleX(1);
+	}
+}
+@keyframes image {
+	0% {
+		transform: translateY(-1000px);
+	}
+	95% {
+		transform: translateY(-500px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}

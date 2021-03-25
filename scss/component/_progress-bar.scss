@@ -1,0 +1,14 @@
+.bar {
+	height: 15px;
+	position: absolute;
+	width: 50%;
+	top: 15%;
+	left: 25%;
+	&--progress {
+		height: 15px;
+		background-color: rgb(79, 107, 150);
+		animation: progress-bar 1s;
+		transform-origin: left;
+		opacity: 0;
+	}
+}
